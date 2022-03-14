@@ -1,8 +1,6 @@
 # BlogBuster
 
-Homemade blog site that I built.
+Homemade blog site that I designed.
 
 ## Built using
-- Node.JS
-- Express
-- EJS
+- ❤
