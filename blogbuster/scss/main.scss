@@ -1,1 +1,19 @@
-@use "bootstrap_bb";
+@use "sass:map";
+@import "bootstrap_bb";
+
+.fixed-top-md {
+    @include media-breakpoint-up(md) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+
+.fixed-top-bar-fix {
+    @include media-breakpoint-up(md) {
+        margin-bottom: map.get($spacers, 5);
+    }
+}
+
