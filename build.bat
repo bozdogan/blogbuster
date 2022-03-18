@@ -5,7 +5,7 @@ SETLOCAL
 SET BUILDDIR=%~dp0\blogbuster
 SET BOOTSTRAP=%~dp0\opt\bootstrap-5.1.3
 SET SASSCMD=CALL sass
-SET SASSFLAGS=--style compressed --no-source-map --load-path=%BOOTSTRAP%\scss
+SET SASSFLAGS=--style compressed --no-source-map --load-path=%BOOTSTRAP%\scss %1
 
 ECHO Copying JS files...
 copy "%BOOTSTRAP%\dist\js\bootstrap.bundle.js" "%BUILDDIR%\js\" || GOTO FAIL
