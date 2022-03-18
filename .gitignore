@@ -1,5 +1,2 @@
 # Bootstrap source files
-opt/bootstrap-5.1.3/*
-
-# Whitelist scss source files
-!opt/bootstrap-5.1.3/scss
+opt/
