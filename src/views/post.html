@@ -13,7 +13,7 @@
   <!-- navbar -->
 <div class="fixed-top-bar-fix">
   <nav class="navbar navbar-expand-md fixed-top-md navbar-dark bg-dark">
-    <div class="container">
+    <div class="container-lg">
       <a href="#" class="navbar-brand">BlogBuster</a>
       <button class="navbar-toggler" type="button"
       data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -24,8 +24,8 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="/campgrounds" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="/campgrounds/new" class="nav-link">Contact</a></li>  
+          <li class="nav-item"><a href="/post.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="/about.html" class="nav-link">Contact</a></li>  
         </ul> 
         
         <ul class="nav navbar-nav ms-auto text-end-md">
@@ -45,7 +45,9 @@
   <main class="container my-5">
     <div class="row">
       <div class="col-md-8">
+        {{ content }}
 
+<!--
         #some/tags
         <h1>Title</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem eaque, saepe illum soluta corporis? Ducimus iste quis et similique amet eum aut maxime nulla! Exercitationem facilis atque veritatis quos.
@@ -55,7 +57,7 @@
         <p>Gev, gev, gev, enim maxime nisi id, architecto vitae vel facere suscipit atque earum voluptate quasi assumenda pariatur iusto mollitia itaque, rerum, ratione alias.</p>
         <p>Some code:</p>
         <p><code>%%🔐α 90/sDZGO0LNqRyA2XBYiv08DsToRdDHLJqw24yx5P0zWjrIfFAqqJU/CDaEFGblroE6Lo6Dr/+tFIgtGeRn42YSRvBTNWxESczTHDo9WX1XEzdA= 🔐%%</code></p>
-        <p><!--%%🔐α fLdwjDYy+lObc5OgqNq3dgcxG7MBjTX3BZFbnVZ4Y2VCcNQknpExvQA37dCiGNe4lJ4FkDTuaDINsRzmayRJEhsp/oz0/ZQ6 🔐%%--></p>
+        <p>< !--%%🔐α fLdwjDYy+lObc5OgqNq3dgcxG7MBjTX3BZFbnVZ4Y2VCcNQknpExvQA37dCiGNe4lJ4FkDTuaDINsRzmayRJEhsp/oz0/ZQ6 🔐%%-- ></p>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi aspernatur qui facere blanditiis nostrum numquam quaerat magni eveniet, libero aliquam? Quia inventore eveniet quo laboriosam, natus provident laudantium animi quaerat.
           Eligendi ab eveniet ullam nulla alias accusamus tempora assumenda commodi ex, qui provident officia? Maxime eligendi provident minus? Repellendus eligendi dolore labore eos in cupiditate repudiandae, libero nemo illum ab.
@@ -85,14 +87,19 @@
           Ratione, tempore dolore! Incidunt consequuntur asperiores repellat quos, dolorum quas, maiores, officia facere minus eveniet labore saepe deserunt possimus suscipit? Assumenda blanditiis magnam quasi nostrum suscipit debitis similique veritatis earum.
           Culpa beatae accusamus minus at pariatur laborum, aliquam nam natus deserunt, modi, eum facere! Tenetur odio pariatur accusantium repudiandae explicabo quae animi? Rerum blanditiis praesentium voluptate, illum culpa perspiciatis sequi.
         </p>
+      -->
       </div>
 
     <div class="col-md-4">
+      {{ field_2 }}
+
+      <!--
       <h3>Side Notes</h3>
       <hr />
       <p>type: blog
       issue_time: 1970-01-01T00:00</p>
       <hr />
+    -->
     </div>
     </div>
   </main>
@@ -100,8 +107,8 @@
 
   <!-- Footer -->
   <footer class="footer text-muted bg-dark py-3 mt-auto">
-    <div class="container">
-      <span>&copy; Bozdogan 2022</span>
+    <div class="container text-center">
+      <small>&copy; Bozdogan 2022. All rights reserved.</small>
     </div>
   </footer>
 
