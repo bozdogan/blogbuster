@@ -23,8 +23,13 @@ ECHO Transpiling SCSS files...
 IF NOT EXIST "%BUILDDIR%\css\" ( mkdir "%BUILDDIR%\css" )
 %SASSCMD% %SASSFLAGS% "%SOURCEDIR%\scss":"%BUILDDIR%\css" || GOTO FAIL
 
+ECHO.
+ECHO Copying views
+xcopy /S /Y "%SOURCEDIR%\views\*" "%BUILDDIR%\views\" || GOTO FAIL
+
+ECHO.
 ECHO Copying static assets...
-copy "%ASSETSDIR%\*" "%BUILDDIR%" || GOTO FAIL
+xcopy /S /Y "%ASSETSDIR%\*" "%BUILDDIR%" || GOTO FAIL
 
 GOTO END
 
