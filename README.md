@@ -1,6 +1,6 @@
 # BlogBuster
 
-Homemade blog site that I designed.
+Homemade blog site template that I designed.
 
 ## Built using
-- A batch file
+- Two batch files
