@@ -1,7 +1,8 @@
+# Editor config
+.vscode/
+
 # Bootstrap source files
 opt/
 
-.vscode/
-
 # Generated code
-dist/
+preview/
